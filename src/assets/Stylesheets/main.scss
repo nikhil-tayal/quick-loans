@@ -1,0 +1,189 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0%;
+  .brand {
+    .logo-image {
+      transform: translateY(-5px);
+      margin-right: 5px;
+    }
+    .logo-text {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    cursor: pointer;
+  }
+  .contact-details {
+    text-align: right;
+  }
+}
+.agent-input__wrapper {
+  h1 {
+    color: #1b6ca8;
+    text-align: center;
+  }
+}
+.card__wrapper {
+  background: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 2% 3%;
+  position: relative;
+  h4 {
+    color: #0a97b0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+  .label {
+    font-weight: 700;
+    margin: 5px 0;
+    color: #1d1d1d;
+  }
+  input.value {
+    border: none;
+    border-bottom: 1px solid #bcbcbc;
+    width: 100%;
+    &:active,
+    &:focus {
+      border: none;
+      outline: none;
+      border: 1px solid #fce8d5;
+      box-shadow: 1px 1px 2px 2px #fce8d5;
+      border-radius: 3px;
+      padding: 5px 10px;
+    }
+  }
+  .add-button {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #0a97b0;
+    padding: 3px 15px;
+    cursor: pointer;
+  }
+  .cross__button {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+    svg {
+      color: #b06262;
+    }
+  }
+}
+.modal-box {
+  width: 50%;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: none;
+}
+.button__generic {
+  border-radius: 10px;
+  color: #fff;
+  background-color: #0a97b0;
+  padding: 3px 15px;
+  border: none;
+  margin-top: 20px;
+  outline: none;
+}
+.loan-application__wrapper {
+  .header {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+}
+.loan-application__wrapper {
+  position: relative;
+  .print__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #0a97b0;
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+.login__wrapper {
+  background-color: #0a97b061;
+  height: 100vh;
+  width: 100vw;
+  .login-header {
+    font-size: 32px;
+    text-align: center;
+    // margin: 50px 0;
+    padding: 100px 0 50px 0;
+    font-weight: 600;
+  }
+  .form-container {
+    margin: 0 auto;
+    width: 50%;
+    min-width: 500px;
+  }
+}
+.ReactTable {
+  text-align: center;
+  .rt-tr{
+    display: flex;
+  }
+  .rt-th {
+    background-color: #0a97b0;
+    color: #fff;
+    padding: 10px 0 !important;
+    border-right: 1px solid #fff !important;
+  }
+
+  .rt-tbody {
+    .rt-tr {
+      cursor: pointer;
+
+      .rt-td {
+        padding: 25px 0 !important;
+        white-space: normal;
+      }
+    }
+  }
+
+  .rt-tr {
+    &.-odd {
+      background-color: #f0f0f0;
+    }
+  }
+}
+
+.datatable-pagination {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+
+  li {
+    flex: 1;
+    text-align: center;
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+    }
+  }
+}
+@media print {
+  body {
+    font-size: 18pt;
+  }
+  .print__button {
+    display: none;
+  }
+}
